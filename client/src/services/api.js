@@ -4,7 +4,7 @@ import axios from 'axios';
 // All API calls in the app will use this instead of plain fetch().
 // The baseURL points to our Express backend.
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://finance-tracker-wvqk.onrender.com/api' || 'http://localhost:5000/api',
 });
 
 // This is called an "interceptor".
